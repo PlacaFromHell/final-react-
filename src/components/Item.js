@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-
 const Item = ({id, nombre, rutaImagen, precio, stock}) => {
 
     return (
@@ -9,10 +8,10 @@ const Item = ({id, nombre, rutaImagen, precio, stock}) => {
         </picture>
         <div className="card-body">
             <h5 className="card-title">{nombre}</h5>
-            <p> 
-            ${precio} Cantidad:{stock}
+            <p className='naranjita'> 
+                Precio: ${precio} Cantidad:{stock}
             </p>
-            <Link to={`/item/${id}`} className="btn">
+            <Link to={`/item/${id}`} className="btn btn-primary">
                  Ver detalle
             </Link> 
         </div>

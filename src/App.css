@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  background-color: black;
+  min-height: 100vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +17,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 
 .App-header {
   background-color: #282c34;
@@ -37,12 +44,15 @@
   }
 }
 
+.carticon {
+  width: 3rem;
+}
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: black;
+  background-color: red;
   padding: 1px;
   align-items: center;
   flex-wrap: wrap;
@@ -77,6 +87,7 @@
   width: 15rem;
   margin: 10px !important;
   justify-content: flex-start;
+  background-color: rgb(41, 41, 41) !important;
 }
 
 .card-title {
@@ -98,6 +109,10 @@
   grid-gap: 0.5rem;
   background-color: black;
   justify-content: center;
+}
+
+.naranjita {
+  color: orange;
 }
 
 .btn {
@@ -132,12 +147,18 @@
 }
 
 .DetalleProducto {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   max-width: 100%;
+  padding: 1rem;
+  padding-top: 2rem;
+  border: red;
+  border-style: outset;
+  border-width: 1px;
 }
 
 .main {
@@ -153,4 +174,75 @@
 
 .botoneta {
   justify-content: space-around;
+}
+
+.logo {
+  width: 10rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+}
+
+.boton {
+  color: white;
+  background-color: red;
+  font-size: large;
+  font-weight: bold;
+  border-style: none;
+  height: 2rem;
+  
+}
+
+boton:hover {
+  border-style: none;
+}
+
+.numero {
+  color: white;
+  margin: 2rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+.fotinga {
+  width: 30rem
+}
+
+.carritox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.filaitem {
+  margin: 1rem;
+}
+
+.finalizar {
+  font-size: larger;
+  font-weight: bold;
+  margin: 4rem;
+  margin-bottom: 10rem;
+  color: red;
 }
